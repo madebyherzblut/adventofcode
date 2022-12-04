@@ -33,7 +33,6 @@ const priority = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
       .map((l) => l.split("")),
     3
   ).reduce((acc, group) => {
-    console.log(group);
     const shared = group[0].find(
       (i) => group[1].includes(i) && group[2].includes(i)
     );
